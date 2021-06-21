@@ -50,7 +50,7 @@ function updateProgressBar(event) {
 function updateSeekbar(event) {
     // console.log(event.offsetX, event.target.clientWidth);
     let currentPoint = event.offsetX;
-    let progressbarWidth = event.target.clientWidth;
+    let progressbarWidth = this.clientWidth;
     let currentRange = (currentPoint/progressbarWidth) * video.duration
     // console.log(currentRange)
     // below currentTime is a inbuilt property of video
